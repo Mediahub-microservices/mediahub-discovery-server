@@ -1,0 +1,204 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.mediahub:discovery-server >--------------------
+[INFO] Building discovery-server 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.3:run (default-cli) > test-compile @ discovery-server >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ discovery-server ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ discovery-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ discovery-server ---
+[INFO] skip non existing resourceDirectory /home/malik/Desktop/Mediahub-Microservices/discovery-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ discovery-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.0.3:run (default-cli) < test-compile @ discovery-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.3:run (default-cli) @ discovery-server ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-06T19:57:20.260Z  INFO 791543 --- [discovery-server] [           main] c.m.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 17.0.18 with PID 791543 (/home/malik/Desktop/Mediahub-Microservices/discovery-server/target/classes started by malik in /home/malik/Desktop/Mediahub-Microservices/discovery-server)
+2026-03-06T19:57:20.270Z  INFO 791543 --- [discovery-server] [           main] c.m.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-03-06T19:57:21.237Z  INFO 791543 --- [discovery-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39bf9f1e-21fb-33dd-aa08-d20a36bafdc3
+2026-03-06T19:57:21.499Z  INFO 791543 --- [discovery-server] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2026-03-06T19:57:21.511Z  INFO 791543 --- [discovery-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-06T19:57:21.511Z  INFO 791543 --- [discovery-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-06T19:57:21.560Z  INFO 791543 --- [discovery-server] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1243 ms
+2026-03-06T19:57:22.400Z  INFO 791543 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-03-06T19:57:22.400Z  INFO 791543 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-03-06T19:57:22.559Z  INFO 791543 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-03-06T19:57:22.559Z  INFO 791543 --- [discovery-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-03-06T19:57:22.708Z  INFO 791543 --- [discovery-server] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-03-06T19:57:24.073Z  WARN 791543 --- [discovery-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-06T19:57:24.093Z  INFO 791543 --- [discovery-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-06T19:57:24.109Z  INFO 791543 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-06T19:57:24.109Z  INFO 791543 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-03-06T19:57:24.111Z  INFO 791543 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1772827044110 with initial instances count: 0
+2026-03-06T19:57:24.149Z  INFO 791543 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-03-06T19:57:24.151Z  WARN 791543 --- [discovery-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-03-06T19:57:24.160Z  INFO 791543 --- [discovery-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-03-06T19:57:24.160Z  INFO 791543 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-03-06T19:57:24.166Z  INFO 791543 --- [discovery-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-06T19:57:24.215Z  INFO 791543 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2026-03-06T19:57:24.224Z  INFO 791543 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-03-06T19:57:24.224Z  INFO 791543 --- [discovery-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-03-06T19:57:24.224Z  INFO 791543 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-03-06T19:57:24.224Z  INFO 791543 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-03-06T19:57:24.225Z  INFO 791543 --- [discovery-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-03-06T19:57:24.227Z  INFO 791543 --- [discovery-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-03-06T19:57:24.229Z  INFO 791543 --- [discovery-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2026-03-06T19:57:24.230Z  INFO 791543 --- [discovery-server] [           main] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-03-06T19:57:24.230Z  INFO 791543 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-03-06T19:57:24.230Z  INFO 791543 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-03-06T19:57:24.230Z  INFO 791543 --- [discovery-server] [           main] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-03-06T19:57:24.231Z  WARN 791543 --- [discovery-server] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-06T19:57:24.231Z  INFO 791543 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-03-06T19:57:24.231Z  INFO 791543 --- [discovery-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-03-06T19:57:24.237Z  INFO 791543 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-06T19:57:24.237Z  INFO 791543 --- [discovery-server] [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-03-06T19:57:24.257Z  INFO 791543 --- [discovery-server] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-06T19:57:24.268Z ERROR 791543 --- [discovery-server] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8761 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8761 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.753 s
+[INFO] Finished at: 2026-03-06T19:57:24Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.3:run (default-cli) on project discovery-server: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       2026-03-06T19:57:36.869Z  INFO 753809 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER/localhost:config-server:8888 with status DOWN (replication=false)
+2026-03-06T19:57:36.875Z  INFO 753809 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER/localhost:config-server:8888 with status DOWN (replication=false)
+2026-03-06T19:57:36.880Z  INFO 753809 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance CONFIG-SERVER/localhost:config-server:8888 (replication=false)
+2026-03-06T19:58:02.338Z  INFO 753809 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.0.117:api-gateway:8080 with status DOWN (replication=false)
+2026-03-06T19:58:02.344Z  INFO 753809 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.0.117:api-gateway:8080 with status DOWN (replication=false)
+2026-03-06T19:58:02.350Z  INFO 753809 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.168.0.117:api-gateway:8080 (replication=false)
+2026-03-06T19:58:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T19:58:08.154Z  INFO 753809 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SUBSCRIPTION-SERVICE/192.168.0.117:subscription-service:8083 with status DOWN (replication=false)
+2026-03-06T19:58:08.160Z  INFO 753809 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SUBSCRIPTION-SERVICE/192.168.0.117:subscription-service:8083 with status DOWN (replication=false)
+2026-03-06T19:58:08.167Z  INFO 753809 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SUBSCRIPTION-SERVICE/192.168.0.117:subscription-service:8083 (replication=false)
+2026-03-06T19:58:08.341Z  INFO 753809 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/192.168.0.117:user-service:8081 with status DOWN (replication=false)
+2026-03-06T19:58:08.345Z  INFO 753809 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/192.168.0.117:user-service:8081 with status DOWN (replication=false)
+2026-03-06T19:58:08.350Z  INFO 753809 --- [discovery-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USER-SERVICE/192.168.0.117:user-service:8081 (replication=false)
+2026-03-06T19:58:09.491Z  INFO 753809 --- [discovery-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MEDIA-SERVICE/192.168.0.117:media-service:8082 with status DOWN (replication=false)
+2026-03-06T19:58:09.495Z  INFO 753809 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MEDIA-SERVICE/192.168.0.117:media-service:8082 with status DOWN (replication=false)
+2026-03-06T19:58:09.500Z  INFO 753809 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance MEDIA-SERVICE/192.168.0.117:media-service:8082 (replication=false)
+2026-03-06T19:58:17.813Z  WARN 753809 --- [discovery-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: MEDIA-SERVICE - 192.168.0.117:media-service:8082
+2026-03-06T19:58:17.813Z  WARN 753809 --- [discovery-server] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Renew): MEDIA-SERVICE - 192.168.0.117:media-service:8082
+2026-03-06T19:58:17.858Z  INFO 753809 --- [discovery-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MEDIA-SERVICE/192.168.0.117:media-service:8082 with status UP (replication=false)
+2026-03-06T19:58:19.201Z  WARN 753809 --- [discovery-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SUBSCRIPTION-SERVICE - 192.168.0.117:subscription-service:8083
+2026-03-06T19:58:19.201Z  WARN 753809 --- [discovery-server] [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SUBSCRIPTION-SERVICE - 192.168.0.117:subscription-service:8083
+2026-03-06T19:58:19.234Z  WARN 753809 --- [discovery-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 192.168.0.117:api-gateway:8080
+2026-03-06T19:58:19.234Z  WARN 753809 --- [discovery-server] [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 192.168.0.117:api-gateway:8080
+2026-03-06T19:58:19.244Z  INFO 753809 --- [discovery-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SUBSCRIPTION-SERVICE/192.168.0.117:subscription-service:8083 with status UP (replication=false)
+2026-03-06T19:58:19.263Z  INFO 753809 --- [discovery-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.0.117:api-gateway:8080 with status UP (replication=false)
+2026-03-06T19:59:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:00:05.169Z  WARN 753809 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-03-06T20:00:05.174Z  INFO 753809 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2026-03-06T20:00:05.240Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:01:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:02:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:03:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:04:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:05:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:06:05.239Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:06:48.551Z  INFO 753809 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/192.168.0.117:user-service:8081 with status UP (replication=false)
+2026-03-06T20:07:05.240Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:08:05.240Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:09:05.240Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:10:05.170Z  WARN 753809 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-03-06T20:10:05.240Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:11:05.240Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:12:05.240Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:13:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:14:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:15:05.175Z  INFO 753809 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2026-03-06T20:15:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:16:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:17:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:18:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:19:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:20:05.170Z  WARN 753809 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-03-06T20:20:05.241Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:21:05.663Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:22:05.663Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:23:05.663Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:24:05.663Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:25:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:26:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:27:05.665Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:28:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:29:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:30:05.593Z  WARN 753809 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-03-06T20:30:05.597Z  INFO 753809 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2026-03-06T20:30:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:31:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:32:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:32:08.625Z  INFO 753809 --- [discovery-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/192.168.0.117:user-service:8081 with status DOWN (replication=false)
+2026-03-06T20:32:11.652Z  INFO 753809 --- [discovery-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USER-SERVICE/192.168.0.117:user-service:8081 (replication=false)
+2026-03-06T20:33:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:34:05.664Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:35:05.665Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:36:05.665Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:37:05.666Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:38:05.665Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:39:05.665Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:40:05.593Z  WARN 753809 --- [discovery-server] [eerNodesUpdater] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-03-06T20:40:05.665Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:41:05.665Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:42:05.666Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:43:05.666Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:44:05.666Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:45:05.598Z  INFO 753809 --- [discovery-server] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2026-03-06T20:45:05.666Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:46:05.667Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:47:05.667Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:48:05.668Z  INFO 753809 --- [discovery-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-06T20:49:04.215Z  INFO 753809 --- [discovery-server] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2026-03-06T20:49:04.235Z  INFO 753809 --- [discovery-server] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-06T20:49:04.252Z  INFO 753809 --- [discovery-server] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-06T20:49:04.267Z  INFO 753809 --- [discovery-server] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-03-06T20:49:04.268Z  INFO 753809 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-03-06T20:49:04.272Z  INFO 753809 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-03-06T20:49:04.273Z  INFO 753809 --- [discovery-server] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-03-06T20:49:04.274Z  INFO 753809 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-03-06T20:49:04.274Z  INFO 753809 --- [discovery-server] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-03-06T20:49:04.292Z  INFO 753809 --- [discovery-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-06T20:49:04.292Z  INFO 753809 --- [discovery-server] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
